@@ -1,0 +1,122 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Prompt', sans-serif; /* Or your preferred Thai font */
+}
+/* ... สไตล์อื่นๆ ... */
+
+nav {
+    color: white; /* เปลี่ยนสีตัวอักษรเป็นสีขาวเพื่อให้มองเห็นได้ชัดเจนกว่า */
+    padding: 10px 20px; 
+  }
+  nav h1.had {
+    margin: 0; /* ลบระยะขอบของ h1 */
+  }
+  
+
+nav ul {
+  list-style: none; /* ลบ bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li {
+    margin-left: 20px; /* เพิ่มระยะห่างระหว่างรายการเมนู */
+    cursor: pointer; /* เปลี่ยนรูปแบบการชี้เป็นมือเมื่อเลื่อนเมาส์ไปที่รายการ */
+  }
+nav li {
+  margin-left: 20px; /* เพิ่มระยะห่างระหว่าง list item */
+}
+
+nav a {
+  text-decoration: none; /* ลบ underline ของลิงก์ */
+  color: inherit; /* ใช้สีเดียวกับข้อความรอบข้าง */
+}
+.container{
+    background-color: #0b5bb6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure it takes up full viewport height */
+    padding: 20px;
+}
+
+.user-info{
+    background-color: #2f465f;
+}
+.had {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Filter Section */
+.filter-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filter-section input, .filter-section select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.filter-section button {
+    padding: 8px 15px;
+    background-color: #0b5bb6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Ticket Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+/* Status Colors */
+.status-รอชำระ {
+    color: orange;
+}
+
+.status-ยกเลิกการชำระ {
+    color: red;
+}
+
+.status-ชำระแล้ว {
+    color: green;
+}
+
+/* Footer */
+footer {
+    margin-top: auto; /* Push footer to bottom */
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+    color: #777;
+}
